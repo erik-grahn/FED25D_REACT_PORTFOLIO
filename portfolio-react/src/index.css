@@ -23,10 +23,13 @@
 @layer base {
   body {
   @apply font-sans;
+  background-color: var(--color-background);
   }
 }
 
 #root {
   
-  background-color: var(--color-background);
+  max-width: 1400px;
+  margin-inline: clamp(1rem, 5vw, 5rem);
+  
 }

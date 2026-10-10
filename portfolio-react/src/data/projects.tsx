@@ -10,7 +10,7 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    name: "the budgethelp.com application",
+    name: "the budgethelp .com application",
     date: "feb.13 2026",
     img: "",
     categories: ["frontend", "js"],
