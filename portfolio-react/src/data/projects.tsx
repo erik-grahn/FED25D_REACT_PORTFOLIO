@@ -3,7 +3,7 @@ import type { Project } from "../types/Project";
 const projects: Project[] = [
   {
     id: 1,
-    name: "the ikea® escape-room",
+    name: "the ikea® escape- room",
     date: "mar.21 2026",
     img: "",
     categories: ["frontend", "games", "ts"],
@@ -17,7 +17,7 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    name: "the morning club menu-page",
+    name: "the morning club menu- page",
     date: "jan.09 2026",
     img: "",
     categories: ["frontend", "html", "css"],
@@ -31,14 +31,14 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    name: "the mcdonalds® perfume-page",
+    name: "the mcdonalds® perfume- page",
     date: "mar.21 2026",
     img: "",
     categories: ["frontend", "games"],
   },
   {
     id: 6,
-    name: "the radio & podcast api-page",
+    name: "the radio & podcast api- page",
     date: "mar.21 2026",
     img: "",
     categories: ["frontend", "api"],
