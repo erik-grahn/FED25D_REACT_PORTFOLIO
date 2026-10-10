@@ -6,11 +6,19 @@ const ProjectCard = () => {
       <h2 className="text-6xl font-bold text-primary">
         03<span className="text-secondary">.</span> projects
       </h2>
-      <ul>
+      <ul className="grid grid-cols-1 lg:grid-cols-2 justify-items-center">
         {projects.map((project) => {
           return (
-            <li key={project.id}>
-              <h4>{project.name}</h4>
+            <li
+              className="grid grid-cols-2 justify-items-center mg-6 border-b border-primary"
+              key={project.id}>
+              <h4 className="text-5xl font-bold text-primary">
+                {project.name.split(" ").map((word, index) => (
+                  <span key={index} className="block">
+                    {word}
+                  </span>
+                ))}
+              </h4>
               <img
                 src={
                   project.img ?
@@ -19,7 +27,13 @@ const ProjectCard = () => {
                 }
                 alt={`snapshot of the project ${project.name}`}
               />
-              <h5>{project.date}</h5>
+              <h5>
+                {project.date.split(" ").map((word, index) => (
+                  <span className="block" key={index}>
+                    {word}
+                  </span>
+                ))}
+              </h5>
             </li>
           );
         })}
