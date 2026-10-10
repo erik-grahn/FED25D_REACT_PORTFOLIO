@@ -27,9 +27,17 @@
   }
 }
 
+@utility content-padding {
+  padding-inline: clamp(1rem, 5vw, 5rem);
+}
+
+@utility h2 {
+  @apply text-5xl font-bold pb-14;
+}
+
 #root {
   
   max-width: 1400px;
-  margin-inline: clamp(1rem, 5vw, 5rem);
+  
   
 }
