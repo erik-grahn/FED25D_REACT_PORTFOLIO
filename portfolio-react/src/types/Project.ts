@@ -3,5 +3,5 @@ export type Project = {
   name: string;
   date: string;
   img: string;
-  categories: string[];
+  category: string[];
 };
