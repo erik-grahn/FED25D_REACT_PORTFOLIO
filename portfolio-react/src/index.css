@@ -46,11 +46,19 @@ html.alternate-theme {
 }
 
 @utility content-padding {
-  padding-inline: clamp(1rem, 5vw, 5rem);
+  padding-inline: clamp(1rem, 4vw, 4rem);
+
+    @media screen and (min-width: 640px) {
+    padding-inline: clamp(1rem, 7vw, 7rem); 
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding-inline: clamp(1rem, 10vw, 10rem); 
+  }
 }
 
 @utility h2 {
-  @apply text-5xl font-bold pb-14;
+  @apply text-4xl font-bold pb-14;
 }
 
 @utility filter-button {
