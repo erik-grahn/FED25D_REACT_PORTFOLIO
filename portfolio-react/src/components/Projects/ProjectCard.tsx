@@ -25,7 +25,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       />
       <h5 className="justify-self-start font-light">
         {project.date.split(" ").map((date, index) => (
-          <span className="block" key={index}>
+          <span className="block text-primary" key={index}>
             {date}
           </span>
         ))}
