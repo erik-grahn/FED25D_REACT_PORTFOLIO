@@ -6,7 +6,7 @@ interface ProjectCardProps {
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <li
-      className="grid grid-cols-2 w-2xs mb-14 h-92 justify-items-center border-b border-primary md:border-none"
+      className="grid grid-cols-2 w-2xs mt-16 h-92 justify-items-center not-last:border-b border-primary md:border-none"
       key={project.id}>
       <h4 className="text-2xl font-bold text-primary justify-self-start">
         {project.name.split(" ").map((word, index) => (

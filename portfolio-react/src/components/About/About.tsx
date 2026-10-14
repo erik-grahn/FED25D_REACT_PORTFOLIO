@@ -24,9 +24,9 @@ const About = () => {
               <span className="italic font-medium"> intuitive</span> and
               compelling experiences.
             </p>
-            <p className="text-lg md:pb-4 font-medium italic underline sm:text-2xl md:text-3xl xl:text-4xl">
+            <h5 className="text-lg md:pb-4 font-medium italic underline sm:text-2xl md:text-3xl xl:text-4xl">
               core expertice
-            </p>
+            </h5>
             <ul className="list-disc pl-5 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
               <li>design</li>
               <li>creativity</li>
@@ -36,7 +36,7 @@ const About = () => {
           </div>
           <img
             className="w-full max-w-[380px] rounded-3xl justify-self-center"
-            src="../public/erik-hs.png"
+            src="/erik-hs.png"
             alt=""
           />
         </div>

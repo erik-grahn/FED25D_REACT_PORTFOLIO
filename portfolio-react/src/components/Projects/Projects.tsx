@@ -21,12 +21,12 @@ const Projects = () => {
   });
 
   return (
-    <section className="w-full my-24">
+    <section className="w-full pt-16">
       <div className="">
         <h2 className="content-padding h2 text-primary">
           03<span className="text-secondary">.</span>projects
         </h2>
-        <div className="content-padding mb-12">
+        <div className="content-padding">
           <div className="flex flex-wrap gap-3">
             {projectCategories.map((category) => (
               <button

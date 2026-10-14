@@ -26,7 +26,7 @@
 
 html.alternate-theme {
   --color-background: #141313;
-  --color-background2: #141313;
+  --color-background2: #231f1c;
   --color-background3: #00ffd9;
 
   --color-primary: #f8fffe;
@@ -70,7 +70,7 @@ button {
 }
 
 @utility h2 {
-  @apply text-4xl font-bold pb-8 sm:text-5xl lg:text-6xl;
+  @apply text-4xl font-bold pb-8 sm:text-5xl lg:text-6xl xl:text-7xl;
 }
 
 @utility filter-button {
