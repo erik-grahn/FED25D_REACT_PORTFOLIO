@@ -2,7 +2,7 @@ import projects from "../../data/projects";
 import ProjectCard from "./ProjectCard";
 import { useState } from "react";
 
-const categories = ["html", "css", "js", "ts", "api", "react"];
+const projectCategories = ["html", "css", "js", "ts", "api", "react"];
 
 const Projects = () => {
   const [filters, setFilter] = useState<string[]>([]);
@@ -21,22 +21,24 @@ const Projects = () => {
   });
 
   return (
-    <section className="my-24">
-      <div className="content-padding">
-        <h2 className="h2 text-primary">
+    <section className="w-full my-24">
+      <div className="">
+        <h2 className="content-padding h2 text-primary">
           03<span className="text-secondary">.</span>projects
         </h2>
-        <div>
-          {categories.map((category) => (
-            <button
-              className={`filter-button ${filters.includes(category) ? "bg-secondary" : "bg-primary hover:bg-grey2"}`}
-              key={category}
-              onClick={() => toggleFilter(category)}>
-              {category}
-            </button>
-          ))}
+        <div className="content-padding mb-12">
+          <div className="flex flex-wrap gap-3">
+            {projectCategories.map((category) => (
+              <button
+                className={`filter-button ${filters.includes(category) ? "bg-secondary" : "bg-primary hover:bg-grey2"}`}
+                key={category}
+                onClick={() => toggleFilter(category)}>
+                {category}
+              </button>
+            ))}
+          </div>
         </div>
-        <ul className="grid grid-cols-1 lg:grid-cols-2 justify-items-center lg:justify-items-start">
+        <ul className="content-padding grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center xl:justify-items-start">
           {filteredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

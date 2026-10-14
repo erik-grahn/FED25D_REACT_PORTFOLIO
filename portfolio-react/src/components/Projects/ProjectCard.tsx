@@ -6,9 +6,9 @@ interface ProjectCardProps {
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <li
-      className="grid grid-cols-2 w-sm mb-14 h-104 justify-items-center border-b border-primary lg:border lg:p-4 lg:rounded-xl"
+      className="grid grid-cols-2 w-2xs mb-14 h-92 justify-items-center border-b border-primary md:border-none"
       key={project.id}>
-      <h4 className="text-4xl font-bold text-primary justify-self-start">
+      <h4 className="text-2xl font-bold text-primary justify-self-start">
         {project.name.split(" ").map((word, index) => (
           <span key={index} className="block">
             {word}
@@ -23,10 +23,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         }
         alt={`snapshot of the project ${project.name}`}
       />
-      <h5 className="justify-self-start pt-6 font-light">
-        {project.date.split(" ").map((word, index) => (
+      <h5 className="justify-self-start font-light">
+        {project.date.split(" ").map((date, index) => (
           <span className="block" key={index}>
-            {word}
+            {date}
           </span>
         ))}
       </h5>
