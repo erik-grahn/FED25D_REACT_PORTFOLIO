@@ -25,7 +25,7 @@ const About = () => {
               compelling experiences.
             </p>
             <h5 className="text-lg md:pb-4 font-medium italic underline sm:text-2xl md:text-3xl xl:text-4xl">
-              core expertice
+              core expertise
             </h5>
             <ul className="list-disc pl-5 sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
               <li>design</li>
