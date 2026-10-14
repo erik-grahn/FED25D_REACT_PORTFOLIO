@@ -46,7 +46,7 @@ html.alternate-theme {
 
 @layer base {
   body {
-  @apply font-sans text-primary font-light bg-background;
+  @apply font-sans text-primary font-extralight bg-background;
   
   /* font-weight: 300; */
   
@@ -66,7 +66,7 @@ html.alternate-theme {
 }
 
 @utility h2 {
-  @apply text-4xl font-bold pb-14;
+  @apply text-4xl font-bold pb-14 sm:text-5xl lg:text-6xl;
 }
 
 @utility filter-button {
