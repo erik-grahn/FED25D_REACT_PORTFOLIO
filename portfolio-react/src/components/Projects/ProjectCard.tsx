@@ -23,13 +23,13 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         }
         alt={`snapshot of the project ${project.name}`}
       />
-      <h5 className="justify-self-start font-light">
+      <p className="justify-self-start">
         {project.date.split(" ").map((date, index) => (
           <span className="block text-primary" key={index}>
             {date}
           </span>
         ))}
-      </h5>
+      </p>
     </li>
   );
 };

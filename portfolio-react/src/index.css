@@ -38,8 +38,10 @@ html.alternate-theme {
 
 @layer base {
   body {
-  @apply font-sans;
-  background-color: var(--color-background);
+  @apply font-sans text-primary font-light bg-background;
+  
+  /* font-weight: 300; */
+  
   }
 }
 

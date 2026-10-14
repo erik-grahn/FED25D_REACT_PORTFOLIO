@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
+import InfoArrow from "./InfoArrow";
 
 const Hero = () => {
   const [isAlternate, setIsAlternate] = useState(false);
@@ -13,10 +14,10 @@ const Hero = () => {
   };
 
   return (
-    <div className="content-padding my-12">
-      <div className="relative w-fit">
+    <section className="content-padding my-12">
+      <div className="relative w-fit my-12">
         <svg
-          className="block h-auto w-82 sm:w-140 md:w-164 lg:w-196"
+          className="block h-auto w-82 sm:w-140 md:w-164 lg:w-196 xl:w-224"
           viewBox="0 0 361 208"
           fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +34,8 @@ const Hero = () => {
           <ThemeToggle isAlternate={isAlternate} onToggle={toggleTheme} />
         </div>
       </div>
-    </div>
+      <InfoArrow />
+    </section>
   );
 };
 
