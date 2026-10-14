@@ -1,9 +1,9 @@
 const Experience = () => {
   return (
-    <section className="w-full bg-secondary my-24">
+    <section className="w-full bg-background2 my-24">
       <div className="content-padding">
         <h2 className="h2 text-primary">
-          02<span className="text-background">.</span>experience
+          02<span className="text-alternate">.</span>experience
         </h2>
       </div>
     </section>

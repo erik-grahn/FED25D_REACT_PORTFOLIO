@@ -1,10 +1,10 @@
 import "./index.css";
 
-import Experience from "./components/Experience";
-import About from "./components/About";
-import Form from "./components/Form";
-import Projects from "./components/Projects/Projects";
 import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <About />
       <Experience />
       <Projects />
-      <Form />
+      <Contact />
     </>
   );
 }

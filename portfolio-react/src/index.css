@@ -6,9 +6,13 @@
   --font-sans: "poppins", sans-serif;
 
   --color-background: #E6DFD2;
+  --color-background2: #F58847;
+  --color-background3: #333333;
+
   --color-primary: #333333;
   --color-secondary: #F58847;
-  --color-alternate: #24455C;
+  --color-alternate: #E6DFD2;
+  --color-contact: #F58847;
 
   --color-info: #2563eb;
   --color-error: #dc2626;
@@ -21,10 +25,14 @@
 }
 
 html.alternate-theme {
-  --color-background: #fff9f2;
-  --color-primary: #333333;
-  --color-secondary: #e85d36;
-  --color-alternate: #4337ad;
+  --color-background: #141313;
+  --color-background2: #141313;
+  --color-background3: #00ffd9;
+
+  --color-primary: #f8fffe;
+  --color-secondary: #00ffd9;
+  --color-alternate: #00ffd9;
+  --color-contact: #f8fffe;
 
   --color-info: #2563eb;
   --color-error: #dc2626;
