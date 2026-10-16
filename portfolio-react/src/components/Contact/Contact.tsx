@@ -7,8 +7,8 @@ const Contact = () => {
         <h2 className="h2 text-background">
           04<span className="text-contact">.</span>contact
         </h2>
+        <Form />
       </div>
-      <Form />
     </section>
   );
 };
