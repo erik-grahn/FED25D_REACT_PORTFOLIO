@@ -28,37 +28,39 @@ const Navigation = () => {
               ${isOpen ? "-rotate-45" : "bottom-2"}`}
           />
         </button>
-        {isOpen && (
-          <div className="fixed inset-0 z-40 flex items-center justify-center bg-background">
-            <ul className="flex flex-col items-center gap-8 text-3xl font-bold">
-              <li>
-                <a href="#home" onClick={() => setIsOpen(false)}>
-                  home
-                </a>
-              </li>
-              <li>
-                <a href="#about" onClick={() => setIsOpen(false)}>
-                  about
-                </a>
-              </li>
-              <li>
-                <a href="#experience" onClick={() => setIsOpen(false)}>
-                  experience
-                </a>
-              </li>
-              <li>
-                <a href="#projects" onClick={() => setIsOpen(false)}>
-                  projects
-                </a>
-              </li>
-              <li>
-                <a href="#contact" onClick={() => setIsOpen(false)}>
-                  contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        )}
+        <div
+          className={`fixed inset-0 z-40 flex items-center justify-center bg-background
+                transition-[opacity,visibility] duration-300
+                ${isOpen ? "opacity-100 visible" : "invisible opacity-0"}
+            `}>
+          <ul className="flex flex-col items-center gap-8 text-3xl font-bold">
+            <li>
+              <a href="#home" onClick={() => setIsOpen(false)}>
+                home
+              </a>
+            </li>
+            <li>
+              <a href="#about" onClick={() => setIsOpen(false)}>
+                about
+              </a>
+            </li>
+            <li>
+              <a href="#experience" onClick={() => setIsOpen(false)}>
+                experience
+              </a>
+            </li>
+            <li>
+              <a href="#projects" onClick={() => setIsOpen(false)}>
+                projects
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={() => setIsOpen(false)}>
+                contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   );
