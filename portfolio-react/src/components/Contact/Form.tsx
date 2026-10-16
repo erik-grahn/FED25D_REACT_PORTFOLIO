@@ -4,6 +4,7 @@ const Form = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     subject: "connect",
     message: "",
   });
@@ -20,6 +21,7 @@ const Form = () => {
   type FormErrors = {
     name?: string;
     email?: string;
+    phone?: string;
     message?: string;
   };
 
@@ -31,6 +33,9 @@ const Form = () => {
     }
     if (!formData.email.trim()) {
       newErrors.email = "email is required";
+    }
+    if (!formData.phone.trim()) {
+      newErrors.phone = "phone number i required";
     }
     if (!formData.message.trim()) {
       newErrors.message = "message is required";
@@ -78,6 +83,20 @@ const Form = () => {
           className="bg-background w-64 text-primary p-2 rounded-md my-2"
         />
         {error.email && <p className="text-error">{error.email}</p>}
+      </div>
+      <div className="mb-4">
+        <label className="block text-background" htmlFor="phone">
+          phone
+        </label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          placeholder="phone"
+          value={formData.phone}
+          onChange={handleChange}
+          className="bg-background w-64 text-primary p-2 rounded-md my-2"
+        />
       </div>
       <div className="text-background mb-4">
         <p>contact type</p>

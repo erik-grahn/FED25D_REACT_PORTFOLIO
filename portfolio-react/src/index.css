@@ -28,7 +28,7 @@
 html.alternate-theme {
   --color-background: #141313;
   --color-background2: #141313;
-  --color-background3: #00ffd9;
+  --color-background3: #00a39e;
 
   --color-primary: #f8fffe;
   --color-secondary: #00ffd9;
@@ -36,7 +36,7 @@ html.alternate-theme {
   --color-contact: #f8fffe;
 
   --color-info: #2563eb;
-  --color-error: #dc2626;
+  --color-error: #ff0000;
   --color-warning: #d97706;
   --color-success: #16a34a;
 
