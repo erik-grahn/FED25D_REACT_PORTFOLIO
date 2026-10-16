@@ -1,4 +1,3 @@
-import { span } from "motion/react-client";
 import type { Project } from "../../types/Project";
 
 interface ProjectCardProps {
