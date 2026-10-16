@@ -69,7 +69,7 @@ Open the local URL shown in your terminal, usually `http://localhost:5173`.
 
 ## Links
 
-- **Live Portfolio:** [View website](YOUR_VERCEL_URL)
+- **Live Portfolio:** [View website](https://fed-25-d-react-portfolio-portfolio-react-o8s0babif-granka.vercel.app/)
 - **Figma Design:** [View design in Figma](https://www.figma.com/design/XMe5hRXwPpAlSz7nJrQgaA/Erik-s-Portfolio-FED?node-id=0-1&p=f&t=4O6KuLQ89s1SpOrn-0)
 - **GitHub Repository:** [View source code](https://github.com/erik-grahn/FED25D_REACT_PORTFOLIO)
 
