@@ -60,9 +60,6 @@ html.alternate-theme {
   body {
   font-family: var(--font-sans);
   @apply text-primary font-extralight bg-background;
-  
-  /* font-weight: 300; */
-  
   }
 }
 
