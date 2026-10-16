@@ -1,5 +1,6 @@
 import "./index.css";
 
+import Navigation from "./components/Navigation/Navigation";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
@@ -10,6 +11,7 @@ import ScrollReveal from "./components/ScrollReveal";
 function App() {
   return (
     <>
+      <Navigation />
       <Hero />
       <ScrollReveal>
         <About />
