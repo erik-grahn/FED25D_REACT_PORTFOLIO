@@ -1,4 +1,10 @@
-import type { Project } from "../types/Project";
+type Project = {
+  id: number;
+  name: string;
+  date: string;
+  img: string;
+  category: string[];
+};
 
 const projects: Project[] = [
   {
