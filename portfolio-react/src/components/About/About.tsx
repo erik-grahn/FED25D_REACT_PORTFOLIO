@@ -36,7 +36,7 @@ const About = () => {
           </div>
           <img
             className="w-full max-w-[380px] rounded-3xl justify-self-center"
-            src="/erik-hs.png"
+            src="/erik-hs.webp"
             alt=""
           />
         </div>

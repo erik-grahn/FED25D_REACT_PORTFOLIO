@@ -8,7 +8,7 @@ const Experience = () => {
         <div className="grid grid-cols-2">
           <div className="row-start-1 md:row-span-2 p-4">
             <img
-              src="/tomorrowland.png"
+              src="/tomorrowland.webp"
               className="rounded-3xl w-full max-w-[380px] pb-8"
               alt=""
             />
