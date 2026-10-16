@@ -4,7 +4,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header>
+    <header id="home">
       <nav className="justify-self-end">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -30,20 +30,30 @@ const Navigation = () => {
         </button>
         {isOpen && (
           <div className="fixed inset-0 z-40 flex items-center justify-center bg-background">
-            <ul className="flex flex-col items-center gap-8 text-3xl">
+            <ul className="flex flex-col items-center gap-8 text-3xl font-bold">
               <li>
                 <a href="#home" onClick={() => setIsOpen(false)}>
-                  Home
+                  home
                 </a>
               </li>
               <li>
                 <a href="#about" onClick={() => setIsOpen(false)}>
-                  About
+                  about
+                </a>
+              </li>
+              <li>
+                <a href="#experience" onClick={() => setIsOpen(false)}>
+                  experience
                 </a>
               </li>
               <li>
                 <a href="#projects" onClick={() => setIsOpen(false)}>
-                  Projects
+                  projects
+                </a>
+              </li>
+              <li>
+                <a href="#contact" onClick={() => setIsOpen(false)}>
+                  contact
                 </a>
               </li>
             </ul>

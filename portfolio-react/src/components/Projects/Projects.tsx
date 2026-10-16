@@ -21,7 +21,7 @@ const Projects = () => {
   });
 
   return (
-    <section className="w-full pt-16">
+    <section className="w-full pt-16" id="projects">
       <div className="">
         <h2 className="content-padding h2 text-primary">
           03<span className="text-secondary">.</span>projects

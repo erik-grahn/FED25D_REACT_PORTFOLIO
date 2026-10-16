@@ -1,6 +1,6 @@
 const Experience = () => {
   return (
-    <section className="w-full bg-background2 py-16">
+    <section className="w-full bg-background2 py-16" id="experience">
       <div className="content-padding">
         <h2 className="h2 text-primary pb-0">
           02<span className="text-alternate">.</span>experience
