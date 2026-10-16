@@ -4,6 +4,8 @@ A personal portfolio built with **React, TypeScript, Vite and Tailwind CSS** as 
 
 The project focuses on building a single-page portfolio while working with React components, props, state management and form validation.
 
+PS. Try pressing the toggle within the word "PORTFOLIO"
+
 ---
 
 ## Tech Stack
