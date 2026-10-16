@@ -3,8 +3,8 @@
 
 
 @theme {
-  --font-sans: "poppins", sans-serif;
-  --font-headings: "Space Grotesk", sans-serif;
+  --font-sans: "Poppins", sans-serif;
+  
 
   --color-background: #E6DFD2;
   --color-background2: #F58847;
@@ -26,9 +26,11 @@
 }
 
 html.alternate-theme {
+  --font-sans: "Space Grotesk", sans-serif;
+
   --color-background: #141313;
   --color-background2: #141313;
-  --color-background3: #00a39e;
+  --color-background3: #00b8b2;
 
   --color-primary: #f8fffe;
   --color-secondary: #00ffd9;
@@ -56,7 +58,8 @@ html.alternate-theme {
     -webkit-box-shadow: 0 0 0 1000px var(--color-background) inset;
     transition: background-color 9999s ease-in-out 0s; }
   body {
-  @apply font-sans text-primary font-extralight bg-background;
+  font-family: var(--font-sans);
+  @apply text-primary font-extralight bg-background;
   
   /* font-weight: 300; */
   
@@ -80,13 +83,9 @@ button {
 }
 
 @utility h2 {
-  @apply font-headings text-4xl font-bold pb-8 sm:text-5xl lg:text-6xl xl:text-7xl;
+  @apply text-4xl font-bold pb-8 sm:text-5xl lg:text-6xl xl:text-7xl;
 }
 
 @utility filter-button {
   @apply rounded-full px-4 py-2 text-background w-24 mb-2 font-medium transition-colors;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  @apply --font-headings
 }
