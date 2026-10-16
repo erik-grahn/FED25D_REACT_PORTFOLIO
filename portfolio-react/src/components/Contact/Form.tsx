@@ -1,15 +1,31 @@
 import { useState, type ChangeEvent } from "react";
 
-const Form = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "connect",
-    message: "",
-  });
-  const [error, setError] = useState<FormErrors>({});
+type FormData = {
+  name: string;
+  email: string;
+  phone: string;
+  subject: "connect" | "inquiries";
+  message: string;
+};
 
+type FormErrors = {
+  name?: string;
+  email?: string;
+  phone?: string;
+  message?: string;
+};
+
+const initialFormData: FormData = {
+  name: "",
+  email: "",
+  phone: "",
+  subject: "connect",
+  message: "",
+};
+
+const Form = () => {
+  const [formData, setFormData] = useState(initialFormData);
+  const [error, setError] = useState<FormErrors>({});
   const [isSuccess, setIsSuccess] = useState(false);
 
   const handleChange = (
@@ -18,13 +34,6 @@ const Form = () => {
     const { name, value } = e.target;
 
     setFormData({ ...formData, [name]: value });
-  };
-
-  type FormErrors = {
-    name?: string;
-    email?: string;
-    phone?: string;
-    message?: string;
   };
 
   const validate = () => {
@@ -45,10 +54,6 @@ const Form = () => {
 
     setError(newErrors);
     return Object.keys(newErrors).length === 0;
-  };
-
-  type IsSuccess = {
-    message: string;
   };
 
   const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
@@ -162,14 +167,13 @@ const Form = () => {
             id="message"
             value={formData.message}
             onChange={handleChange}></textarea>
-          {error.message && <p className="text-error">{error.message}</p>}
+          {error.message && <p className="text-error">{error.message}</p>}{" "}
+          {isSuccess && (
+            <p className="text-success">your message was sent!☺️</p>
+          )}
         </div>
       </div>
-      <div className="mb-4">
-        {isSuccess && (
-          <p className="text-success">your message was sent successfully!☺️</p>
-        )}
-      </div>
+
       <button
         className="rounded-full px-4 py-2 bg-secondary text-background w-24 mb-2 font-medium transition-colors;"
         type="submit">
